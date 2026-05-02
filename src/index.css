@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:    #F5F7FC;
+  --bg2:   #EAEEF8;
+  --bg3:   #DDE3F0;
+  --card:  #FFFFFF;
+  --ink:   #0B0F1A;
+  --ink2:  #1C2338;
+  --muted: #637191;
+  --accent:#0066FF;
+  --accent-g: #00C48C;
+  --accent-r: #FF3B30;
+  --grad:  linear-gradient(135deg, #00C48C 0%, #0066FF 100%);
+  --shadow: 0 4px 24px rgba(11,15,26,0.08);
+  --shadow-lg: 0 16px 60px rgba(11,15,26,0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Gradient text utility */
+.grad-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Accent-g colour shorthand used on the floating badge */
+.text-accent-g { color: var(--accent-g); }
+.bg-accent-g\/10 { background-color: rgba(0,196,140,0.10); }
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--bg3); border-radius: 3px; }
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
