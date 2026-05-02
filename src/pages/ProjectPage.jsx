@@ -1,11 +1,11 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { getProject }             from '../data/projectData'
+import { getProject }             from '../data/ProjectData'
 import PdHero        from '../components/project/PdHero'
-import PdStatsBar    from '../components/project/PdStatsBar'
+import PdStatsBar    from '../components/project/PdStatBar'
 import PdOverview    from '../components/project/PdOverview'
 import PdChallenges  from '../components/project/PdChallenges'
 import PdProcess     from '../components/project/PdProcess'
-import PdResults     from '../components/project/PdResults'
+import PdResults     from '../components/project/Pdresults'
 import PdTestimonial from '../components/project/PdTestimonial'
 import PdNextProject from '../components/project/PdNextProject'
 
@@ -14,7 +14,6 @@ export default function ProjectDetailPage() {
   const nav     = useNavigate()
   const project = getProject(id)
 
-  // Unknown id — bounce back
   if (!project) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center gap-4 bg-bg">
@@ -41,7 +40,6 @@ export default function ProjectDetailPage() {
       <PdTestimonial project={project} />
       <PdNextProject project={project} />
 
-      {/* Bottom action row */}
       <div className="px-[5%] py-12 bg-bg flex flex-wrap items-center
                       justify-center gap-3">
         <button

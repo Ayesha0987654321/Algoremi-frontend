@@ -8,6 +8,7 @@ export const projects = [
     year:     '2024',
     color:    'rgba(0,102,255,0.18)',
     featured: true,
+    services: ['Fintech', 'AI & ML'],
     tags:     ['Featured', 'Fintech', 'AI Integration', 'Cloud'],
     duration: '8 months',
     team:     '6 engineers',
@@ -56,6 +57,7 @@ export const projects = [
     year:     '2024',
     color:    'rgba(0,196,140,0.18)',
     featured: false,
+    services: ['SaaS', 'Analytics'],
     tags:     ['SaaS', 'Analytics', 'Data Viz'],
     duration: '5 months',
     team:     '4 engineers',
@@ -65,10 +67,10 @@ export const projects = [
     description2:
       'GreenOps Dashboard unified all sustainability data into a real-time intelligence layer — enabling reporting, scenario modeling, and supplier-level carbon attribution in a single platform used by the CFO, sustainability team, and board.',
     stats: [
-      { num: '140+', label: 'Data Sources Unified'  },
-      { num: '4hrs', label: 'Report Time → 12min'   },
-      { num: '98%',  label: 'Data Accuracy'          },
-      { num: '3×',   label: 'Faster ESG Reporting'  },
+      { num: '140+',      label: 'Data Sources Unified'  },
+      { num: '4h → 12m',  label: 'Report Time Slashed'   },
+      { num: '98%',       label: 'Data Accuracy'          },
+      { num: '3×',        label: 'Faster ESG Reporting'  },
     ],
     challenges: [
       { icon: '🗂️', title: 'Fragmented Data',         desc: 'Sustainability data lived in 6 different systems across 3 continents. No common schema, inconsistent units, zero automation.' },
@@ -103,6 +105,7 @@ export const projects = [
     year:     '2024',
     color:    'rgba(255,59,48,0.18)',
     featured: false,
+    services: ['Automation', 'B2B'],
     tags:     ['B2B', 'Automation', 'GTM'],
     duration: '4 months',
     team:     '3 engineers',
@@ -118,19 +121,19 @@ export const projects = [
       { num: '41%',  label: 'Meeting Show Rate Increase' },
     ],
     challenges: [
-      { icon: '🔗', title: 'Tool Sprawl',           desc: 'Salesforce, HubSpot, Outreach, Apollo, Clearbit — 7 different tools with no consistent data model or automation between them.' },
-      { icon: '🎯', title: 'Personalization at Scale',desc: 'Generic outreach was converting at 1.2%. The team needed personalization that felt human without requiring humans for every message.' },
-      { icon: '📊', title: 'Attribution Blindness',  desc: 'No one knew which touches actually drove pipeline. Marketing and sales were arguing about the same revenue with no data to resolve it.' },
+      { icon: '🔗', title: 'Tool Sprawl',            desc: 'Salesforce, HubSpot, Outreach, Apollo, Clearbit — 7 different tools with no consistent data model or automation between them.' },
+      { icon: '🎯', title: 'Personalization at Scale', desc: 'Generic outreach was converting at 1.2%. The team needed personalization that felt human without requiring humans for every message.' },
+      { icon: '📊', title: 'Attribution Blindness',   desc: 'No one knew which touches actually drove pipeline. Marketing and sales were arguing about the same revenue with no data to resolve it.' },
     ],
     steps: [
-      { icon: '🗺️', title: 'Process Mapping',      desc: 'Shadowed SDRs for one week. Documented every task, decision point, and handoff. Identified 23 automation opportunities.' },
-      { icon: '🔧', title: 'Integration Layer',     desc: 'Built a unified data layer connecting all 7 tools via their APIs. Established canonical contact/company schema as the single source of truth.' },
-      { icon: '🤖', title: 'Intelligent Sequencing',desc: 'Built LLM-powered personalization engine using company news, job postings, and LinkedIn signals. Tested 40+ message variants in the first month.' },
-      { icon: '📈', title: 'Attribution Model',     desc: 'Implemented multi-touch attribution using Markov chains. Finally gave marketing and sales a shared model to make decisions from.' },
+      { icon: '🗺️', title: 'Process Mapping',       desc: 'Shadowed SDRs for one week. Documented every task, decision point, and handoff. Identified 23 automation opportunities.' },
+      { icon: '🔧', title: 'Integration Layer',      desc: 'Built a unified data layer connecting all 7 tools via their APIs. Established canonical contact/company schema as the single source of truth.' },
+      { icon: '🤖', title: 'Intelligent Sequencing', desc: 'Built LLM-powered personalization engine using company news, job postings, and LinkedIn signals. Tested 40+ message variants in the first month.' },
+      { icon: '📈', title: 'Attribution Model',      desc: 'Implemented multi-touch attribution using Markov chains. Finally gave marketing and sales a shared model to make decisions from.' },
     ],
     results: [
       { icon: '📬', val: '3.2×', label: 'Increase in qualified pipeline generated in the first 90 days'  },
-      { icon: '⏰', val: '14hrs',label: 'Saved per SDR per week — redirected to actual selling'            },
+      { icon: '⏰', val: '14hrs', label: 'Saved per SDR per week — redirected to actual selling'           },
       { icon: '📈', val: '41%',  label: 'Increase in booked meeting show rates via smart reminders'        },
       { icon: '🎯', val: '8.4%', label: 'Reply rate on automated sequences (industry avg: 2.1%)'           },
     ],
@@ -150,6 +153,7 @@ export const projects = [
     year:     '2023',
     color:    'rgba(0,102,255,0.14)',
     featured: false,
+    services: ['Healthcare', 'AI & ML'],
     tags:     ['Healthcare', 'AI', 'HIPAA'],
     duration: '10 months',
     team:     '7 engineers',
@@ -165,8 +169,8 @@ export const projects = [
       { num: '4.8★',  label: 'Physician Satisfaction'      },
     ],
     challenges: [
-      { icon: '🔒', title: 'HIPAA Compliance',   desc: 'Every architectural decision required compliance review. PHI handling, audit logging, role-based access, and breach protocols had to be built into the foundation.' },
-      { icon: '🔄', title: 'Legacy Migration',   desc: '10+ years of patient records in a proprietary format. Zero tolerance for data loss or corruption during migration.' },
+      { icon: '🔒', title: 'HIPAA Compliance',    desc: 'Every architectural decision required compliance review. PHI handling, audit logging, role-based access, and breach protocols had to be built into the foundation.' },
+      { icon: '🔄', title: 'Legacy Migration',    desc: '10+ years of patient records in a proprietary format. Zero tolerance for data loss or corruption during migration.' },
       { icon: '👨‍⚕️', title: 'Physician Adoption', desc: 'Physicians are notoriously resistant to EHR changes. The UX had to be dramatically better, not just different, or the project would fail regardless of technical quality.' },
     ],
     steps: [
@@ -176,10 +180,10 @@ export const projects = [
       { icon: '🚀', title: 'Phased Rollout',          desc: 'Piloted with 2 volunteer clinics for 60 days. Incorporated physician feedback before expanding. Zero-downtime migration for all 22 locations.' },
     ],
     results: [
-      { icon: '⏱️', val: '78%',   label: 'Reduction in physician documentation time per patient encounter'    },
-      { icon: '❤️', val: '4.8/5', label: 'Physician satisfaction score, up from 1.9/5 on legacy system'       },
-      { icon: '💊', val: '31%',   label: 'Reduction in prior authorization delays via automated submissions'   },
-      { icon: '🛡️', val: '0',     label: 'HIPAA violations or data incidents across all 22 clinics'            },
+      { icon: '⏱️', val: '78%',   label: 'Reduction in physician documentation time per patient encounter'  },
+      { icon: '❤️', val: '4.8/5', label: 'Physician satisfaction score, up from 1.9/5 on legacy system'     },
+      { icon: '💊', val: '31%',   label: 'Reduction in prior authorization delays via automated submissions' },
+      { icon: '🛡️', val: '0',     label: 'HIPAA violations or data incidents across all 22 clinics'          },
     ],
     quote:      "I went from dreading coming to work because of the documentation to actually looking forward to patient care again. That's what this system gave back.",
     quoteName:  'Primary Care Physician',
@@ -197,6 +201,7 @@ export const projects = [
     year:     '2023',
     color:    'rgba(0,196,140,0.14)',
     featured: false,
+    services: ['Supply Chain', 'AI & ML'],
     tags:     ['Supply Chain', 'Predictive AI', 'Logistics'],
     duration: '7 months',
     team:     '5 engineers',
@@ -206,8 +211,8 @@ export const projects = [
     description2:
       'LogiChain built a multi-tier supply chain visibility platform with predictive disruption scoring — pulling signals from geopolitical news, weather, port congestion, and supplier financial health to surface risks before they become crises.',
     stats: [
-      { num: '14',      label: 'Countries Connected'           },
-      { num: '3 Tiers', label: 'Supplier Visibility'           },
+      { num: '14',      label: 'Countries Connected'            },
+      { num: '3 Tiers', label: 'Supplier Visibility'            },
       { num: '87%',     label: 'Disruption Prediction Accuracy' },
       { num: '12 Days', label: 'Avg. Early Warning Lead Time'   },
     ],
@@ -244,6 +249,7 @@ export const projects = [
     year:     '2023',
     color:    'rgba(255,59,48,0.14)',
     featured: false,
+    services: ['MarTech', 'AI & ML'],
     tags:     ['MarTech', 'ML', 'Advertising'],
     duration: '5 months',
     team:     '4 engineers',
@@ -253,15 +259,15 @@ export const projects = [
     description2:
       'TargetIQ built a proprietary audience intelligence platform — combining first-party signals, behavioral patterns, and predictive lookalike modeling to systematically improve ROAS across every campaign from day one.',
     stats: [
-      { num: '$50M+', label: 'Ad Spend Managed'    },
-      { num: '2.8×',  label: 'ROAS Improvement'    },
-      { num: '60%',   label: 'Setup Time Reduced'  },
-      { num: '40+',   label: 'Client Campaigns'    },
+      { num: '$50M+', label: 'Ad Spend Managed'   },
+      { num: '2.8×',  label: 'ROAS Improvement'   },
+      { num: '60%',   label: 'Setup Time Reduced' },
+      { num: '40+',   label: 'Client Campaigns'   },
     ],
     challenges: [
-      { icon: '🔒', title: 'Privacy-First Design',    desc: 'Post-iOS 14, cookie-based targeting was degrading fast. The entire system had to be designed around privacy-preserving audience modeling from the start.' },
-      { icon: '📊', title: 'Cross-Client Learning',   desc: 'Insights from Client A should improve Client B without exposing private data. Required federated learning architecture to share model weights, not data.' },
-      { icon: '⚡', title: 'Real-Time Activation',    desc: 'Audience segments needed to update in near-real-time as campaign performance data came in. Static segments were losing to dynamic competitors.' },
+      { icon: '🔒', title: 'Privacy-First Design',     desc: 'Post-iOS 14, cookie-based targeting was degrading fast. The entire system had to be designed around privacy-preserving audience modeling from the start.' },
+      { icon: '📊', title: 'Cross-Client Learning',    desc: 'Insights from Client A should improve Client B without exposing private data. Required federated learning architecture to share model weights, not data.' },
+      { icon: '⚡', title: 'Real-Time Activation',     desc: 'Audience segments needed to update in near-real-time as campaign performance data came in. Static segments were losing to dynamic competitors.' },
     ],
     steps: [
       { icon: '🧹', title: 'Data Unification',    desc: 'Built a clean room architecture that unified first-party data from 40+ clients without commingling. Established the privacy-preserving data layer foundation.' },
@@ -286,3 +292,9 @@ export const projects = [
 
 // Helper — get one project by id
 export const getProject = (id) => projects.find((p) => p.id === id)
+
+// All unique services for filter pills
+export const allServices = [
+  'All',
+  ...Array.from(new Set(projects.flatMap((p) => p.services))),
+]

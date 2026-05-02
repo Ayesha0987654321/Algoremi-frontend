@@ -1,34 +1,34 @@
 // src/App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home      from './pages/HomePage'
-import About     from './pages/AboutPage'
-import Services  from './pages/ServicesPage'
-import Portfolio from './pages/PortfolioPage'
-import Contact   from './pages/ContactPage'
-import Navbar from './components/layout/Navbar'
-import Footer from './components/layout/Footer'
-import ScrollToTop from './components/layout/ScrollToTop'
+import Home          from './pages/HomePage'
+import About         from './pages/AboutPage'
+import Services      from './pages/ServicesPage'
+import Portfolio     from './pages/PortfolioPage'
+import Contact       from './pages/ContactPage'
+import ProjectDetail from './pages/ProjectPage'
+import Navbar        from './components/layout/Navbar'
+import Footer        from './components/layout/Footer'
+import ScrollToTop   from './components/layout/ScrollToTop'
 
 export default function App() {
   return (
-    <BrowserRouter>
-    <ScrollToTop/>
-    <Navbar />
+    <BrowserRouter basename='/Algoremi-frontend'>
+      <ScrollToTop />
+      <Navbar />
       <Routes>
-
-        <Route path="/"          element={<Home />}      />
-        <Route path="/about"     element={<About />}     />
-        <Route path="/services"  element={<Services />}  />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact"   element={<Contact />}   />
-         <Route path="*"              element={<NotFound />}   />
-      
+        <Route path="/"               element={<Home />}          />
+        <Route path="/about"          element={<About />}         />
+        <Route path="/services"       element={<Services />}      />
+        <Route path="/portfolio"      element={<Portfolio />}     />
+        <Route path="/portfolio/:id"  element={<ProjectDetail />} />
+        <Route path="/contact"        element={<Contact />}       />
+        <Route path="*"               element={<NotFound />}      />
       </Routes>
       <Footer />
     </BrowserRouter>
-    
   )
 }
+
 function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center
@@ -40,8 +40,7 @@ function NotFound() {
       <p className="text-muted text-base max-w-sm leading-relaxed">
         The page you're looking for doesn't exist or has been moved.
       </p>
-      
-       <a href="/"
+      <a href="/"
         className="mt-2 px-7 py-3.5 rounded-xl bg-ink text-white text-sm
                    font-semibold hover:opacity-85 transition-opacity"
       >
